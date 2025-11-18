@@ -1,0 +1,37 @@
+# Ignore environment variables
+.env
+**/.env
+/assets/**
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore virtual environments
+venv/
+env/
+.venv/
+
+# Ignore Streamlit cache
+.streamlit/
+
+# Ignore IDE stuff
+.vscode/
+.idea/
+
+# Ignore OS system files
+.DS_Store
+Thumbs.db
+
+# Ignore Python build files
+build/
+dist/
+*.egg-info/
+
+# Logs
+*.log
+
+# Ignore Chroma vector DB (optional)
+chroma/
