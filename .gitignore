@@ -1,31 +1,33 @@
-# Ignore environment variables
+# Environment variables
 .env
 **/.env
-/assets/**
 
-# Ignore Python cache files
+# Assets (optional)
+assets/**
+
+# Python cache
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 
-# Ignore virtual environments
+# Virtual environments
 venv/
 env/
 .venv/
 
-# Ignore Streamlit cache
+# Streamlit
 .streamlit/
 
-# Ignore IDE stuff
+# IDE folders
 .vscode/
 .idea/
 
-# Ignore OS system files
+# OS junk files
 .DS_Store
 Thumbs.db
 
-# Ignore Python build files
+# Python build artifacts
 build/
 dist/
 *.egg-info/
@@ -33,5 +35,21 @@ dist/
 # Logs
 *.log
 
-# Ignore Chroma vector DB (optional)
-chroma/
+# -------- Chroma Vector DB --------
+chroma_data/
+
+# -------- Uploaded user files --------
+uploads/
+uploaded_files/
+*.pdf
+*.docx
+*.txt
+
+# Temporary parse/output folders
+parsed/
+temp/
+tmp/
+
+# Lock files (optional)
+poetry.lock
+Pipfile.lock

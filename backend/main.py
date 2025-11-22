@@ -5,7 +5,15 @@ from test_case_agent import generate_test_cases
 from script_gen import generate_selenium_script
 
 
+from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Global HTML storage
 html_code = ""
