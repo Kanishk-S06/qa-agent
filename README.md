@@ -73,6 +73,9 @@ backend/
 │── script_gen.py           # Selenium script generator
 │── test_case_agent.py      # Full test case generation workflow
 │── requirements.txt
+
+ui/
+│── app.py                  # streamlit frontend
 ```
 
 ---
